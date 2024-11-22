@@ -1,0 +1,76 @@
+/* 로컬폰트 */
+/* @font-face {
+  font-family: "Pretendard";
+  src: url(../fonts/Pretendard/Pretendard-Light.otf);
+  src: url(../fonts/Pretendard/Pretendard-Thin.otf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url(../fonts/Pretendard/Pretendard-Regular.ttf);
+  src: url(../fonts/Pretendard/Pretendard-Medium.otf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url(../fonts/Pretendard/Pretendard-SemiBold.otf);
+  src: url(../fonts/Pretendard/Pretendard-Bold.otf);
+  font-weight: 800;
+} */
+
+/* -------------------------------------------- */
+/* 프리텐다드 웹폰트 연결 */
+@import url("https://webfontworld.github.io/pretendard/Pretendard.css");
+
+/* 가라몬트 웹폰트 연결 */
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  /* font-family: "EB Garamond", serif; */
+  font-family: "Pretendard", sans-serif;
+  /* 서버구축할때 옆으로 밀림현상 발생하지 않게 하려면 html,body 둘 다 잡아서 overflow-x: hidden; 처리해야함 */
+  overflow-x: hidden;
+  font-size: 100%; /* -> 본문폰트 16px 그래도 사용하겠음 */
+}
+
+body {
+  color: #222;
+  /* 전체적으로 들어가는 본문 폰트 색상 변경 */
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  /* a태그를 전부 block 처리해서 크기값을 이어받거나 적용할 수 있도록 설정 */
+}
+
+img,
+svg,
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+button,
+input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
